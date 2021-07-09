@@ -1,0 +1,94 @@
+---
+---
+.h1, .h2, .h3, .h4, body, h1, h2, h3, h4, h5, h6 {
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-size: 16px;
+}
+
+a { color: #31578E; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+.page-header {
+  background-color: transparent;
+  background-image: url({{ '/assets/images/books.jpg' | relative_url }});
+  background-size: cover;
+  background-position: center center;
+  height: auto;
+  display: block;
+  text-align: center;
+  h1 a {
+    color: #606c71;
+    &:hover {
+      color: #606c71;
+      text-decoration: none;
+    }
+  }
+}
+
+  .btn { display: inline-block; margin-bottom: 1rem; font-width: 2px; font-weight: bold; color: rgba(255, 255, 255, 1); background-color: rgba(34, 57, 94, 1); border-color: rgba(255, 255, 255, 0.2); border-style: solid; border-width: 1px; border-radius: 0.3rem; transition: color 0.2s, background-color 0.2s, border-color 0.2s; }
+  .btn:hover { color: rgba(34, 57, 94, 1); text-decoration: none; background-color: rgba(255, 255, 255, 0.2); border-color: rgba(255, 255, 255, 0.3); }
+  .btn + .btn { margin-left: 1rem; }
+  @media screen and (min-width: 64em) { .btn { padding: 0.75rem 1rem; } }
+  @media screen and (min-width: 42em) and (max-width: 64em) { .btn { padding: 0.6rem 0.9rem; font-size: 0.9rem; } }
+  @media screen and (max-width: 42em) { .btn { display: block; width: 100%; padding: 0.75rem; font-size: 0.9rem; }
+    .btn + .btn { margin-top: 1rem; margin-left: 0; } }
+
+    .main-content { word-wrap: break-word; }
+    .main-content :first-child { margin-top: 0; }
+    @media screen and (min-width: 64em) { .main-content { max-width: 64em; padding: 2rem 6rem; margin: 0 auto; font-size: 1.1rem; } }
+    @media screen and (min-width: 42em) and (max-width: 64em) { .main-content { padding: 2rem 4rem; font-size: 1.1rem; } }
+    @media screen and (max-width: 42em) { .main-content { padding: 2rem 1rem; font-size: 1rem; } }
+    .main-content h1, .main-content h2, .main-content h3, .main-content h4, .main-content h5, .main-content h6 { margin-top: 2rem; margin-bottom: 1rem; font-weight: normal; color: #001D47; }
+    .main-content p { margin-bottom: 1em; font-weight: normal; color: #001D47; }
+
+    h1 {
+      text-align: center;
+    }
+
+.summary.right img {
+  margin-right: 20px;
+  margin-bottom: 70px;
+  margin-top: 30px;
+  float: left;
+  width: 300px;
+  height: 300px;
+  border-radius: 150px;
+}
+
+.column {
+ float: left;
+ width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+.summary.left pdf {
+  margin-right: 10px;
+  float: right;
+}
+
+body
+{
+  padding: 0;
+  margin: 0;
+  font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #001D47;
+}
+
+.site-footer {
+  background-color: transparent;
+  background-image: url({{ '/assets/images/books.jpg' | relative_url }});
+  background-size: cover;
+  background-position: center center;
+  color: rgba(255, 255, 255, 1);
+  }
